@@ -11,15 +11,13 @@ import javax.servlet.ServletResponse;
 
 /**
  * 过滤器的生命周期
- * @author Administrator
- *
  */
 public class FilterDemo2 implements Filter{
 	
 	/**
 	 * 初始化的操作
 	 * 过滤器什么创建呢？	服务器启动的时候创建过滤器的实例。
-	 * 调用几次？	调用一次	
+	 * 调用几次？	调用一次
 	 */
 	public void init(FilterConfig filterConfig) throws ServletException {
 		System.out.println("init...");
