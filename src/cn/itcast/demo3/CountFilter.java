@@ -17,6 +17,7 @@ public class CountFilter implements Filter{
 	private FilterConfig config;
 
 	/**
+	 * 分ip统计访问的次数
 	 * 进行初始化的操作
 	 * 在ServletContext域中存入map
 	 */
