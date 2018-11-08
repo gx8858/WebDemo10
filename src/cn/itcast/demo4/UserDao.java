@@ -10,7 +10,7 @@ import cn.itcast.utils.MyJdbcUtil;
 public class UserDao {
 	
 	/**
-	 * 通过用户名和密码查询单个用户
+	 * 通过用户名和密码查询单个用户（dao层）
 	 * @param username
 	 * @param password
 	 * @return
