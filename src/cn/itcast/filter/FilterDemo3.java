@@ -14,7 +14,7 @@ import javax.servlet.ServletResponse;
 public class FilterDemo3 implements Filter{
 
 	/**
-	 * 使用FilterConfig来获取一些信息
+	 * 使用FilterConfig接口来获取一些信息
 	 */
 	public void init(FilterConfig config) throws ServletException {
 		// 获取filter配置的名称<filter-name>
