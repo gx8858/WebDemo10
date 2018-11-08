@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class EncodingServlet extends HttpServlet {
 
+	/**
+	 * 后台设置编码的改写
+	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
