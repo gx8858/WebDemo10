@@ -11,8 +11,6 @@ import javax.servlet.ServletResponse;
 
 /**
  * 解决全局的编码的问题
- * @author Administrator
- *
  */
 public class EncodingFilter implements Filter{
 
