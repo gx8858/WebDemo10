@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class TimeFilter implements Filter{
 
+	/**
+	 * ½ûÓÃä¯ÀÀÆ÷»º´æµÄÊµÀı
+	 */
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
 		// TODO Auto-generated method stub
