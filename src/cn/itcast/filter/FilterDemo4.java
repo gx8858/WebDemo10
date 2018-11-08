@@ -11,6 +11,9 @@ import javax.servlet.ServletResponse;
 
 public class FilterDemo4 implements Filter{
 
+	/**
+	 * 过滤器是双向的
+	 */
 	public void init(FilterConfig filterConfig) throws ServletException {
 		
 	}
