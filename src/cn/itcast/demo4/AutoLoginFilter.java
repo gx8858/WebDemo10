@@ -14,8 +14,6 @@ import javax.servlet.http.HttpSession;
 
 /**
  * 自动登陆的功能
- * @author Administrator
- *
  */
 public class AutoLoginFilter implements Filter{
 
@@ -27,8 +25,8 @@ public class AutoLoginFilter implements Filter{
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 		/**
-		 * * 在过滤器中可以直接获取session中的用户信息，如果user不为空，说明浏览器没关。放行。
-			* 从session中获取不到user的信息
+		 *  在过滤器中可以直接获取session中的用户信息，如果user不为空，说明浏览器没关。放行。
+		  * 从session中获取不到user的信息
 		  * 先获取cookie，获取指定名称的cookie，
 		  * 如果cookie为空，放行。
 		  * 如果cookie不为空，获取用户名和密码。去数据库查询。
