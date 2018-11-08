@@ -10,8 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * µÇÂ½µÄ¹¦ÄÜ
- * @author Administrator
- *
  */
 public class LoginServlet extends HttpServlet {
 
