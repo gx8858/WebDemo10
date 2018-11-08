@@ -19,8 +19,6 @@ import cn.itcast.demo4.User;
 
 /**
  * URL级别全选验证
- * @author Administrator
- *
  */
 public class CheckUserUrlFilter implements Filter{
 
