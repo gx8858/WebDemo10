@@ -10,8 +10,7 @@ import javax.sql.DataSource;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 /**
- * 操作JDBC
- * @author Administrator
+ * 操作JDBC工具类
  */
 public class MyJdbcUtil {
 	
