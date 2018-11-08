@@ -10,7 +10,7 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <error-page>
+  	<error-page>
 		<error-code>500</error-code>
 		<location>/500.jsp</location>
 	</error-page>
@@ -25,91 +25,92 @@
 	</filter>
 	<!-- 配置过滤器的映射 -->
 		<!-- 配置访问方式 -->
-	<!-- 
+	<!--   
 	<filter-mapping>
 		<filter-name>FilterDemo1</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	
 	 
-	 <filter>
-	 	<filter-name>FilterDemo2</filter-name>
-	 	<filter-class>cn.itcast.filter.FilterDemo2</filter-class>
-	 </filter>
-	 
-	 <filter-mapping>
-	 	<filter-name>FilterDemo2</filter-name>
-	 	<url-pattern>/*</url-pattern>
-	 </filter-mapping>
+	<filter>
+		<filter-name>FilterDemo2</filter-name>
+		<filter-class>cn.itcast.filter.FilterDemo2</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FilterDemo2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 	  
-	 <filter>
-	 	<filter-name>FilterDemo3</filter-name>
-	 	<filter-class>cn.itcast.filter.FilterDemo3</filter-class>
-	 	<init-param>
-	 		<param-name>username</param-name>
-	 		<param-value>root</param-value>
-	 	</init-param>
-	 	<init-param>
-	 		<param-name>password</param-name>
-	 		<param-value>123</param-value>
-	 	</init-param>
-	 </filter>
-	  <filter-mapping>
-	 	<filter-name>FilterDemo3</filter-name>
-	 	<url-pattern>/*</url-pattern>
-	 	<dispatcher>ERROR</dispatcher>
-	 </filter-mapping>
+	 
+	<filter>
+		<filter-name>FilterDemo3</filter-name>
+		<filter-class>cn.itcast.filter.FilterDemo3</filter-class>
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>root</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>123</param-value>
+		</init-param>
+	</filter>
+	 <filter-mapping>
+		<filter-name>FilterDemo3</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>ERROR</dispatcher>
+	</filter-mapping>
 	 -->
 	 
-	 <!-- 
-	 <filter>
-	 	<filter-name>FilterDemo4</filter-name>
-	 	<filter-class>cn.itcast.filter.FilterDemo4</filter-class>
-	 </filter>
-	 
-	 <filter-mapping>
-	 	<filter-name>FilterDemo4</filter-name>
-	 	<url-pattern>/*</url-pattern>
-	 </filter-mapping> 
-	 
+	<!--
+	<filter>
+		<filter-name>FilterDemo4</filter-name>
+		<filter-class>cn.itcast.filter.FilterDemo4</filter-class>
+	</filter>
 	
-	 <filter>
-	 	<filter-name>EncodingFilter</filter-name>
-	 	<filter-class>cn.itcast.demo1.EncodingFilter</filter-class>
-	 	<init-param>
-	 		<param-name>encoding</param-name>
-	 		<param-value>UTF-8</param-value>
-	 	</init-param>
-	 </filter>
-	 
-	 <filter-mapping>
-	 	<filter-name>EncodingFilter</filter-name>
-	 	<url-pattern>/*</url-pattern>
-	 </filter-mapping>
-	 
-	 
-	 <filter>
-	 	<filter-name>TimeFilter</filter-name>
-	 	<filter-class>cn.itcast.demo2.TimeFilter</filter-class>
-	 </filter>
-	 <filter-mapping>
-	 	<filter-name>TimeFilter</filter-name>
-	 	<url-pattern>*.jsp</url-pattern>
-	 </filter-mapping>
+	<filter-mapping>
+		<filter-name>FilterDemo4</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping> 
+	-->
 	
-	 
-	 
-	 
-	 <filter>
-	 	<filter-name>CountFilter</filter-name>
-	 	<filter-class>cn.itcast.demo3.CountFilter</filter-class>
-	 </filter>
-	 <filter-mapping>
-	 	<filter-name>CountFilter</filter-name>
-	 	<url-pattern>/*</url-pattern>
-	 </filter-mapping>
+	<!--  
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>cn.itcast.demo1.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	
+	<filter>
+		<filter-name>TimeFilter</filter-name>
+		<filter-class>cn.itcast.demo2.TimeFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>TimeFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	
+	
+	<filter>
+		<filter-name>CountFilter</filter-name>
+		<filter-class>cn.itcast.demo3.CountFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CountFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 	 
 	  -->
 	  
+	   
 	 <filter>
 	 	<filter-name>AutoLoginFilter</filter-name>
 	 	<filter-class>cn.itcast.demo4.AutoLoginFilter</filter-class>
@@ -139,41 +140,43 @@
 	 </filter-mapping>
 	 
 	
-  <servlet>
-    <servlet-name>ServletDemo1</servlet-name>
-    <servlet-class>cn.itcast.servlet.ServletDemo1</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>ServletDemo2</servlet-name>
-    <servlet-class>cn.itcast.servlet.ServletDemo2</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>EncodingServlet</servlet-name>
-    <servlet-class>cn.itcast.demo1.EncodingServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>cn.itcast.demo4.LoginServlet</servlet-class>
-  </servlet>
+	<servlet>
+	  	<servlet-name>ServletDemo1</servlet-name>
+	  	<servlet-class>cn.itcast.servlet.ServletDemo1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>ServletDemo1</servlet-name>
+  		<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  	<servlet-name>ServletDemo2</servlet-name>
+	  	<servlet-class>cn.itcast.servlet.ServletDemo2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>ServletDemo2</servlet-name>
+  		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>
+	
+	<!--
+	<servlet>
+	  	<servlet-name>EncodingServlet</servlet-name>
+	  	<servlet-class>cn.itcast.demo1.EncodingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>EncodingServlet</servlet-name>
+  		<url-pattern>/encoding</url-pattern>
+	</servlet-mapping>
+	-->
+	
+	<servlet>
+	  	<servlet-name>LoginServlet</servlet-name>
+	  	<servlet-class>cn.itcast.demo4.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>LoginServlet</servlet-name>
+  		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
 
-
-
-
-  <servlet-mapping>
-    <servlet-name>ServletDemo1</servlet-name>
-    <url-pattern>/servlet1</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ServletDemo2</servlet-name>
-    <url-pattern>/servlet2</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>EncodingServlet</servlet-name>
-    <url-pattern>/encoding</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>LoginServlet</servlet-name>
-    <url-pattern>/login</url-pattern>
-  </servlet-mapping>
-  
+   
 </web-app>
