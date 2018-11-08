@@ -12,7 +12,6 @@ import javax.servlet.ServletResponse;
 /**
  * 实现Filter接口，重写方法
  * 在web.xml进行配置
- * @author Administrator
  */
 public class FilterDemo1 implements Filter{
 	
@@ -39,7 +38,7 @@ public class FilterDemo1 implements Filter{
 		
 		// 去访问Servlet
 		
-		// System.out.println("小伙，再来一次吧！！");
+		System.out.println("小伙，再来一次吧！！");
 		
 	}
 	
